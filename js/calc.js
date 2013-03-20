@@ -22,6 +22,8 @@ $(document).ready(function(){
     y = parseInt(y);
     $(this).parent('td').children("span:first").replaceWith("<span>"+x+"</span>");
     $(this).parent('td').children("span:last").replaceWith("<span>"+y+"</span>");
+    console.log(operator_level);
+    $(this).parent('td').children("span:nth-child(2)").replaceWith("<span>"+operator_level+"</span>");
   });
    
   $("input").change(function(){
